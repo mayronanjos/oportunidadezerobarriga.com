@@ -16,7 +16,9 @@
     margin: auto;
   }
 }
-
+.bottom-space {
+  padding-bottom: 70px !important
+}
 * {
   font-family: helvetica, arial, sans-serif;
 }
