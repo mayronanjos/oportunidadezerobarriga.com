@@ -21,6 +21,17 @@
   font-family: helvetica, arial, sans-serif;
 }
 
+#disclaimer-wrapper {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.disclaimer-city {
+  color: red;
+  font-weight: bold;
+}
+
 body {
   font-size: 16px;
 }

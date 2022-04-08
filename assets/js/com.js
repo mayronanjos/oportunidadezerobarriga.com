@@ -8,7 +8,27 @@ $(document).ready(function() {
             $(this).html(dateMinus($(this).attr('data-date-minus')))
         }
     })
+    console.log('get')
+    axios.get('https://ipapi.co/json/', (data) => {
+        console.log(data)
+        createDisclaimer('Sao Jose dos Campos')
+    })
+
 })
+
+// http://ip-api.com/json
+
+//https://ipapi.co/json/
+
+function createDisclaimer (city) {
+    const message = `Você e algumas pessoas próximas de <span class="disclaimer-city">${city}</span> foram selecionadas para participar deste programa.`
+    const wrapper = $('#disclaimer-wrapper')
+    wrapper.append(`
+    <div class="col-lg-8 " style="margin: 0 auto;padding: 10px;">
+            <p style="margin: 0;">${message}</p>
+    </div>
+    `)
+}
 
 function dateMinus(what) {
     var today = Date.now()
