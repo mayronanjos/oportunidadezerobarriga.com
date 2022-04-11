@@ -9,11 +9,10 @@ $(document).ready(function() {
         }
     })
     console.log('get to renans api')
-    axios.get('https://geoip-one.vercel.app/api/get-ip', (response) => {
+    axios.get('https://geoip-one.vercel.app/api/get-ip').then((response) => {
         console.log(response)
         createDisclaimer('Sao Jose dos Campos')
     })
-
 })
 
 // http://ip-api.com/json
