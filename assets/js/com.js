@@ -8,9 +8,9 @@ $(document).ready(function() {
             $(this).html(dateMinus($(this).attr('data-date-minus')))
         }
     })
-    console.log('get')
-    axios.get('https://geoip-one.vercel.app/api/get-ip', (data) => {
-        console.log(data)
+    console.log('get to renans api')
+    axios.get('https://geoip-one.vercel.app/api/get-ip', (response) => {
+        console.log(response)
         createDisclaimer('Sao Jose dos Campos')
     })
 
