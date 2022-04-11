@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
     })
     console.log('get')
-    axios.get('https://ipapi.co/json/', (data) => {
+    axios.get('https://geoip-one.vercel.app/api/get-ip', (data) => {
         console.log(data)
         createDisclaimer('Sao Jose dos Campos')
     })
