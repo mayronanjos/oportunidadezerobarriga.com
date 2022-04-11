@@ -11,7 +11,7 @@ $(document).ready(function() {
     console.log('get to renans api with cors')
     axios.get('https://geoip-one.vercel.app/api/get-ip').then((response) => {
         console.log(response)
-        createDisclaimer('Sao Jose dos Campos')
+        createDisclaimer(response.data.city)
     })
 })
 
