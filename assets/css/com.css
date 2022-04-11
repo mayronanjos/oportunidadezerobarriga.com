@@ -29,6 +29,14 @@
   text-align: center;
 }
 
+.disclaimer-content {
+  margin: 0 auto;
+  padding: 10px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
 .disclaimer-city {
   color: red;
   font-weight: bold;

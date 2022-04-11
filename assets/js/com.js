@@ -23,7 +23,7 @@ function createDisclaimer (city) {
     const message = `Você e algumas pessoas próximas de <span class="disclaimer-city">${city}</span> foram selecionadas para participar deste programa.`
     const wrapper = $('#disclaimer-wrap')
     wrapper.append(`
-    <div class="col-lg-8 " style="margin: 0 auto;padding: 10px;">
+    <div class="col-lg-8 disclaimer-content">
             <p style="margin: 0;">${message}</p>
     </div>
     `)
