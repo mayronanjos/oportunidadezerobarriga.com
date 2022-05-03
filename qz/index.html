@@ -98,23 +98,7 @@ src="https://www.facebook.com/tr?id=675306293704520&ev=AddToCart&noscript=1"
     </head>
 <body>
 
-<div class="container">
-<div class="black">
-<div id="primeira">
-<div class="question">
-<h1>Pergunta 1</h1>
-<p>Você realmente quer descobrir esse segredo?</p>
-</div>
-<div class="answer">
-<button class="btn" onclick="segunda()">SIM</button>
-<button class="btn" onclick="segunda()">NÃO</button>
-</div>
-</div>
-<div id="segunda" class="hide">
-<div class="question">
-<h1>Pergunta 2</h1>
-<p>Você promete não revelar para ninguém?</p>
-</div>
+
 <div class="answer">
 <button class="btn" onclick="terceira()">SIM</button>
 <button class="btn" onclick="terceira()">NÃO</button>
@@ -134,14 +118,6 @@ src="https://www.facebook.com/tr?id=675306293704520&ev=AddToCart&noscript=1"
 <p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
 </div>
 <script>
-    function segunda() {
-      document.getElementById("primeira").classList.add("hide")
-      document.getElementById("segunda").classList.remove("hide")
-    }
-    function terceira() {
-      document.getElementById("segunda").classList.add("hide")
-      document.getElementById("terceira").classList.remove("hide")
-    }
     function redirect() {
       location.href = "https://oportunidadezerobarriga.com/"
     }
